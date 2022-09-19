@@ -19,7 +19,7 @@ echo "-------------开始制作镜像-------------"
 docker build -t ${image} .
 
 echo "-------------开始运行新容器-----------"
-docker run -d --restart always --name ${container} -p 7000:80 ${image}
+docker run -d --restart always --name ${container} -p 8083:80 ${image}
 echo "-------------运行新容器成功-----------"
 
 echo "-----------清理未被使用的镜像-----------"
